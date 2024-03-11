@@ -14,7 +14,7 @@ import time
 def main():
     html_temp="""
       <div style = "background-color:Lightblue;padding:16px">
-      <h2 style="color:black; text-align:center;"> <B>Car Price Prediction Using ML</B> </h2>
+      <h2 style="color:black; text-align:center;"> <B>Car Price Prediction Using ML XGBoost Model</B> </h2>
       </div>
       """
       
