@@ -27,7 +27,7 @@ def main():
     st.write('')
     st.write('')
 
-    st.markdown("##### Are you planning to sell your car!?\n##### So let's try evaluating the price.")
+    st.markdown("##### Are you planning to sell your car?\n##### So let's try evaluating the price.")
     p1 = st.number_input("What is the current ex-showroom price of the car (In Lakhs)", 2.5,25.0,step=1.0)
     p2 = st.number_input("What is the mileage on the car?",1000, 100000, step=500)
     
@@ -86,7 +86,7 @@ def main():
              time.sleep(.5)
              st.toast('Hooray!', icon='🎉')
              st.balloons()
-             st.success("You can sell your car for {:.2f} lakhs".format(pred[0]), icon="✅")
+             st.success("Your car can sell for {:.2f} lakhs".format(pred[0]), icon="✅")
           else:
               st.Warning("You will not be able to sell this car")
     except:
