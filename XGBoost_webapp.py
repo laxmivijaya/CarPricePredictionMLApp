@@ -19,7 +19,7 @@ def main():
       """
       
     model = xgb.XGBRegressor()
-    model.load_model("C:/Users/laxmi/Downloads/Cardata/xgb_model.json")
+    model.load_model("xgb_model.json")
     
     
     st.markdown(html_temp, unsafe_allow_html=True)
@@ -29,7 +29,7 @@ def main():
 
     st.markdown("##### Are you planning to sell your car!?\n##### So let's try evaluating the price.")
     p1 = st.number_input("What is the current ex-showroom price of the car (In Lakhs)", 2.5,25.0,step=1.0)
-    p2 = st.number_input("What is the milage on the car?",1000, 100000, step=500)
+    p2 = st.number_input("What is the mileage on the car?",1000, 100000, step=500)
     
     s1 = st.selectbox("What is the fuel type of the car?", ('Petrol', 'Diesel', 'CNG'))
     
